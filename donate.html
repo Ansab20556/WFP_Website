@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة التبرع</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header-contant">
+        <div class="block2-in-header">
+            <div class="block2-header-logo">
+                <a href="index.html" class="header-logo-img"><img src="assets/img/images/WFP.png" height="145px"></a>
+                <a href="index.html" class="header-logo-text">انقاذ الارواح <br> تغيير الحياة</a>
+            </div>
+            <div class="block2-header-nav">
+                <nav>
+                    <ul class="nav-list" dir="rtl">
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="projects.html">عملنا</a></li>
+                        <li><a href="#">اين نعمل</a></li>
+                        <li><a href="#">شاركنا</a></li>
+                        <li><a href="donate.html" target="_blank" class="btn-donate-now">تبرع الان</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <button class="btn-theme" id="theme-toggle">تبديل الوضع</button>
+    </header>
+
+    <main>
+        <section class="section-after-header">
+            <div class="main-image">
+                <img src="assets/img/images/untitled-design.png" sizes="100vw" width="384" height="256">
+            </div>
+            <div class="donate-main-on-img">
+                <div class="text-on-img">
+                    <h1>يرجى التبرع <mark>الآن </mark> <br>يوفر كل تبرع الغذاء للأطفال والأسر الجوعى.</h1>
+                </div>
+                
+            </div>
+        </section>
+        <!-- <section class="donate-section-form">
+            <div class="donate-two-btns">
+                <a href="#" class="donate donate-monthly">تبرع شهرياً</a>
+                <a href="#" class="donate donate-only-one">تبرع مرة واحدة</a>
+            </div>
+        </section> -->
+        <div class="donate-container">
+        <h1>تبرع لمنظمتنا</h1>
+        <div>
+            <button class="btns" id="one-time-donation-btn">تبرع مرة واحدة</button>
+            <button class="btns" id="monthly-donation-btn">تبرع شهري</button>
+        </div>
+
+        <div id="donation-form-container">
+            <form id="one-time-donation-form" class="donation-form" style="display: none;">
+                <h2>تبرع مرة واحدة</h2>
+                <label for="one-time-amount">المبلغ:</label>
+                <input type="number" id="one-time-amount" placeholder="أدخل المبلغ" required="">
+                <button type="submit">تبرع الآن</button>
+            </form>
+
+            <form id="monthly-donation-form" class="donation-form" style="display: none;">
+                <h2>تبرعك الشهري</h2>
+                <p>أنت على وشك أن تصبح داعماً شهرياً لبرنامج الأغذية العالمي</p>
+
+                <label for="country">البلد:</label>
+                <input type="text" id="country-input" placeholder="ابحث عن البلد..." onfocus="showCountryList()" onkeyup="filterCountries()">
+                <select id="country" required="" size="5">
+                    <option value="afghanistan">أفغانستان</option>
+                    <option value="albania">ألبانيا</option>
+                    <option value="algeria">الجزائر</option>
+                    <option value="andorra">أندورا</option>
+                    <option value="angola">أنغولا</option>
+                    <option value="argentina">الأرجنتين</option>
+                    <option value="australia">أستراليا</option>
+                    <option value="brazil">البرازيل</option>
+                    <option value="canada">كندا</option>
+                    <option value="egypt">مصر</option>
+                    <option value="france">فرنسا</option>
+                    <option value="germany">ألمانيا</option>
+                    <option value="india">الهند</option>
+                    <option value="japan">اليابان</option>
+                    <option value="kuwait">الكويت</option>
+                    <option value="mexico">المكسيك</option>
+                    <option value="qatar">قطر</option>
+                    <option value="saudi-arabia">المملكة العربية السعودية</option>
+                    <option value="united-states">الولايات المتحدة الأمريكية</option>
+                    <option value="yemen">اليمن</option>
+                </select>
+
+                <label for="currency">العملة:</label>
+                <input type="text" id="currency-input" placeholder="ابحث عن العملة..." onfocus="showCurrencyList()" onkeyup="filterCurrencies()">
+                <select id="currency" required="" size="5">
+                    <option value="usd">$ - USD</option>
+                    <option value="eur">€ - EUR</option>
+                    <option value="gbp">£ - GBP</option>
+                    <option value="jpy">¥ - JPY</option>
+                    <option value="aud">$ - AUD</option>
+                    <option value="cad">$ - CAD</option>
+                    <option value="chf">CHF - Swiss Franc</option>
+                    <option value="cny">¥ - CNY</option>
+                    <option value="inr">₹ - INR</option>
+                    <option value="rub">₽ - RUB</option>
+                </select>
+
+                <label>قم بالتبرّع شهرياً بمبلغ:</label>
+                <label>
+                    <input type="radio" name="amount" value="10" checked=""> $10.00
+                </label>
+                <label>
+                    <input type="radio" name="amount" value="18"> $18.00
+                </label>
+                <label>
+                    <input type="radio" name="amount" value="27"> $27.00
+                </label>
+                <label>
+                    <input type="radio" name="amount" value="other"> مبلغ آخر:
+                    <input type="number" id="other-amount" placeholder="أدخل المبلغ">
+                </label>
+
+                <button type="submit">تبرع شهرياً</button>
+            </form>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="donate-footer-container">
+            <div class="footer-column logo">
+                <img src="assets/img/images/footer.png" alt="شعار المنظمة" />
+            </div>
+            <div class="footer-column social-media">
+                <ul>
+                    <li><a href="#"><img src="assets/img/icons/facebook-svgrepo-com.svg" alt="فيسبوك" /> </a></li>
+                    <li><a href="#"><img src="/assets/img/icons/twitter-svgrepo-com.svg" alt="تويتر" /> </a></li>
+                    <li><a href="#"><img src="assets/img/icons/instagram-167-svgrepo-com.svg" alt="إنستغرام" /> </a></li>
+                    <li><a href="#"><img src="assets/img/icons/linkedin-svgrepo-com.svg" alt="لينكدإن" /> </a></li>
+                    <li><a href="#"><img src="assets/img/icons/youtube-svgrepo-com.svg" alt="يوتيوب" /> </a></li>
+                    <li><a href="#"><img src="assets/img/icons/tik-tok-svgrepo-com.svg" alt="تيك توك" /> </a></li>
+                </ul>
+                <p>
+                    <a href="#"> إشعار الخصوصية</a> | 
+                    <a href="#">  الأحكام والشروط</a> | 
+                    <a href="#"> الأسئلة الأكثر شيوعاً</a>
+                </p>
+            </div>
+            <div class="footer-column text">
+                <p>Via Cesare Giulio Viola, 68,<br> 00148 Rome RM, Italy</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
