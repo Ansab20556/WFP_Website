@@ -1,0 +1,633 @@
+/* header styles */
+/* .header-contant{
+    position: fixed;
+} */
+.btn-theme{
+border-radius: 5px;
+background-color: #007DBC;
+color: white;
+}
+.header-contant{
+    height: 30px;;
+}
+.header-logo-img{
+    position: absolute;
+    margin-left: 1000px;
+    z-index: 100;
+    display: block;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.header-logo-text{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 840px;
+    padding: 20px 20px;
+    margin-top: 40px;
+    z-index: 100;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(0, 125, 188) ;
+}
+
+.block2-header-nav{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 60px;
+}
+.nav-list{
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    display: flex;
+}
+.nav-list li a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    color:black;
+}
+.nav-list li a:hover{
+    text-decoration: underline;
+    border-bottom: rgb(133, 127, 127);
+}
+
+/* main styles */
+/* .section-after-header{
+    position: relative;
+    z-index: 99;
+} */
+.main-image img
+{
+    margin-top: 85px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.text-on-img h1{
+    direction: rtl;
+    position: absolute;
+    top:700px;
+    color: #fff;
+    font-size: 28px;
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+    display: block;
+    text-align: right;
+    direction: rtl;
+    margin-left: 580px;
+}
+.text-on-img h1 mark{
+    background-color: rgb(0, 125, 188);
+    color: #fff;
+}
+
+.main-on-img a{
+    position: absolute;
+    top:800px;
+    margin-left: 450px;
+    direction: rtl;
+
+}
+.on-img-2btns{
+    display: block;
+}
+
+.btns-on-img a{
+    width: 9%;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top:-110px;
+}
+.btns-on-img a:hover{
+    /* width: 10%; */
+    background-color: #f1657f82;
+}
+.btns-on-img .read-more{
+    margin-right: 70px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #fff !important;
+    border-radius: 5px;
+    border: 1px solid !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: -42px;
+}
+
+
+/* section-after-main-img */
+.section-after-main-img{
+    direction: rtl;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+.section-after-main-img a{
+    text-decoration: none;
+}
+.section-after-main-img a:hover{
+    width: 30%;
+}
+.section-after-main-img .column {
+    width: 25%; 
+    text-align: center; 
+    margin-bottom: 20px;
+    color:rgb(0, 125, 188) ; 
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+    border: 1px solid #eee;
+}
+.section-after-main-img img {
+    width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+}
+.section-after-main-img .large-text {
+    font-size: 1.5rem; 
+    margin: 10px 0; 
+    font-weight: 700;
+}
+.section-after-main-img .small-text {
+    font-size: 0.9em; 
+    color: #555; 
+}
+
+
+/* footer styles */
+.footer-section1{
+    color: #031c2d;
+    display: block;
+    font-size: 1.125rem;
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.footer-sits-emergencies{
+    direction: rtl;
+    background-color: #e3002b;
+    color: #fff;
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+}
+.footer-sits-emergencies h2{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.footer-sits-emergencies .footer-list{
+    width: 30%;
+    margin: 10px;
+}
+.footer-sits-emergencies ul{
+    list-style-type: none;
+    /* display: inline; */
+}
+.footer-sits-emergencies ul li{
+    padding: 10px;
+}
+.footer-sits-emergencies ul li a {
+    color: #fff;
+    text-decoration:none;
+    font-weight: bold;
+
+}
+
+.footer-section2{
+    margin-top: 0px;
+    background-color: #1A4262;
+    direction: rtl;
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+    display: block;
+}
+.footer-section2 .footer-menu-item{
+    display: flex;
+    margin-right: 60px;
+}
+.footer-section2 .footer-menu-item h2 a{
+    color:#0093B6 ;
+    text-decoration: none;
+    display: flex;
+    font-weight: bold;
+}
+.footer-section2 .footer-menu-item ul{
+    list-style-type: none;
+    position: relative;
+    left: 40px;
+}
+.footer-section2 .footer-menu-item ul li{
+    padding: 9px;
+}
+.footer-section2 .footer-menu-item ul li a{
+    color: rgb(252, 247, 247);
+    text-decoration: none;
+    font-size: 1.125rem;
+    
+}
+.footer-section2 .menu-item{
+    width: 30%;
+    margin: 10px;
+}
+
+
+
+/*------------------------- for donate.html------------------------- */
+.btn-donate-now{
+    text-decoration: none;
+    border-color: #e71321 !important;
+    background-color: #e71321 ;
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.donate-main-on-img .text-on-img h1{
+    direction: rtl;
+    position: absolute;
+    top:250px;
+    color: #fff;
+    font-size: 28px;
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+    display: block;
+    text-align: right;
+    direction: rtl;
+    margin-left: 660px;
+}
+.btns-on-img .btn-donate{
+    margin-right: 250px;
+    border: 1px solid red;
+}
+.donate-two-btns {
+    direction: rtl;
+    display: flex;
+    margin-right: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.donate-two-btns a{
+    border: 1px solid rgb(195, 193, 204);
+    text-align: center;
+    padding:12px
+}
+.donate-two-btns .donate{
+    width: 47%;
+    text-decoration: none;
+    font-size: 20px;
+}
+.btns-on-img btn-donate{
+    padding-left: 20px;
+    margin-left: 450px;
+}
+.donate-container {
+    margin-left: 350px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    direction: rtl;
+    background-color: #e0e0e0; 
+    padding: 30px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 90%; 
+    max-width: 500px;
+}
+.donate-container .btns{
+    width: 45%;
+}
+.donate-container h1 {
+    text-align: center;
+}
+.donate-container input[type="text"], select {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+}
+.donate-container button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(0, 125, 188);; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+}
+.donate-container button:hover {
+    background-color: rgb(0, 125, 188);; 
+}
+.donate-container select {
+    display: none; 
+}
+.donate-container select option:hover {
+    background-color: #f0f0f0;
+}
+
+.donate-footer-container{
+    direction: rtl;
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-start; 
+    max-width: 1500px; 
+    margin: 0 auto; 
+    background-color:#1A4262 ;
+}
+.footer-column {
+    margin: 50px;
+    margin-right: 0;
+    margin-left: 0;
+    flex: 3; 
+    padding: 0 30px; 
+    justify-items: center;
+    color: white;
+}
+.footer-column img {
+    max-width: 50%;
+    color: white;  
+}
+.footer-column h3 {
+    margin-bottom: 10px; 
+}
+.footer-column ul {
+    direction: rtl;
+    list-style-type: none; 
+    padding: 0; 
+    display:flex;
+}
+.footer-column ul li a:hover {
+    width: 125%;
+}
+.footer-column a {
+    color: white; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+}
+.footer-column a i {
+    margin-right: 8px; 
+}
+.footer-column a:hover {
+    text-decoration: underline; 
+}
+.footer-column .social-media p{
+    text-align: center;
+    font-size: 50px;
+}
+.footer-column p {
+    display: flex;
+}
+
+/* -------------------------about.html--------------------- */
+
+.about-container {
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+    text-align: center;
+    margin-top: 80px;
+}
+.about-container .head{
+    background-color: #007DBC;
+    margin: 0%;
+    padding: 10px;
+}
+.about-container .about-img img{
+    position: relative;
+    right: 0px;
+    margin-right: 0px;
+    width: 1160px;
+    padding: 0px;
+    resize: vertical;
+    
+}
+.about-container h1,h2{
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+    font-weight: bold;
+    color: #fdfdfd;
+}
+.about-container p{
+    color: #007DBC;
+    font-size: 28px;
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+    font-weight: bold;
+}
+.container {
+    direction: rtl;
+    display: flex; 
+    max-width: 1200px;
+    margin: 20px auto;
+    font-size: 28px;
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+}
+.container .sidebar ul{
+    font-family: "Lalezar", sans-serif;
+    font-style: normal;
+}
+.container .sidebar ul li a{
+    text-decoration: none;
+    color: #007DBC;
+}
+.container .sidebar ul li {
+    margin-top: 25px;
+}
+.content {
+    width: 75%; /* عرض المحتوى */
+    padding: 20px;
+    background: white; /* لون خلفية المحتوى */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.content h2{
+    color: #007DBC;
+}
+.content p{
+    font-size:20px ;
+}
+.content section {
+    margin-bottom: 20px; 
+}
+
+/* ------------------dark mode or light mode ----------------------- */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* -----------------------------project.html---------------------------- */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.table-container {
+    direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+.table-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.table-column:hover {
+    transform: translateY(-5px);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+    background-color: #007DBC;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+tr:hover td {
+    background-color: #f5f5f5;
+}
+.work-link {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+.work-link:hover {
+    color: #007DBC;
+    transform: translateX(-5px);
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 147, 182, 0.2);
+}
+#search-input {
+    width: 80%;
+    max-width: 800px;
+    padding: 15px;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease;
+    text-align: right;
+}
+#search-input:focus {
+    border-color: #0093B6;
+    box-shadow: 0 0 10px rgba(0, 147, 182, 0.2);
+}
+
+/* ----------------media queries for responsive design ----------------- */
+@media (max-width: 768px) {
+    .table-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .table-column {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .footer-sits-emergencies {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-list {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .footer-menu-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-item {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .donate-footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .footer-column {
+        width: 100%;
+    }
+}
+/* for about page */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .contain {
+        width: 100%;
+    }
+}
+
+
+
