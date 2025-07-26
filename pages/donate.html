@@ -1,50 +1,42 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة التبرع</title>
-    <link rel="stylesheet" href="styles/style.css">
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحة التبرع </title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
 </head>
 <body class="light">
-    <header class="header-contant">
-        <div class="block2-in-header">
-            <div class="block2-header-logo">
-                <a href="index.html" class="header-logo-img"><img src="assets/img/images/WFP.png" height="145px"></a>
-                <a href="index.html" class="header-logo-text">انقاذ الارواح <br> تغيير الحياة</a>
-            </div>
-            <div class="block2-header-nav">
-                <nav>
-                    <ul class="nav-list" dir="rtl">
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="projects.html">عملنا</a></li>
-                        <li><a href="#">اين نعمل</a></li>
-                        <li><a href="#">شاركنا</a></li>
-                        <li><a href="donate.html" target="_blank" class="btn-donate-now">تبرع الان</a></li>
-                        
-                    </ul>
-                </nav>
-            </div>
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/WFP.png" alt="WFP Logo">
+            </a>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="projects.html">عملنا</a></li>
+                <li><a href="#">اين نعمل</a></li>
+                <li><a href="#">شاركنا</a></li>
+                <li><a href="donate.html" class="btn-donate-now">تبرع الآن</a></li>
+                </ul>
+            </nav>
+            <button class="btn-theme" id="theme-toggle">تبديل الوضع</button>
         </div>
-        <button class="btn-theme" id="theme-toggle">تبديل الوضع</button>
     </header>
 
     <main>
-        <section class="section-after-header">
-            <div class="main-image">
-                <img src="assets/img/images/untitled-design.png" sizes="100vw" width="384" height="256">
-            </div>
-            <div class="donate-main-on-img">
-                <div class="text-on-img">
-                    <h1>يرجى التبرع <mark>الآن </mark> <br>يوفر كل تبرع الغذاء للأطفال والأسر الجوعى.</h1>
-                </div>
-                
+        <section class="hero">
+            <img src="../images/untitled-design.png" sizes="100vw" width="384" height="256" alt="صورة رئيسية">
+            <div class="hero-content">
+                <h1>يرجى التبرع <mark>الآن </mark> <br>يوفر كل تبرع الغذاء للأطفال والأسر الجوعى.</h1>
             </div>
         </section>
-        <!-- <section class="donate-section-form">
-            <div class="donate-two-btns">
-                <a href="#" class="donate donate-monthly">تبرع شهرياً</a>
-                <a href="#" class="donate donate-only-one">تبرع مرة واحدة</a>
-            </div>
-        </section> -->
+
         <div class="donate-container">
             <h1>تبرع لمنظمتنا</h1>
             <div>
@@ -123,32 +115,114 @@
                 </form>
             </div>
         </div>
+
     </main>
-    <footer>
-        <div class="donate-footer-container">
-            <div class="footer-column logo">
-                <img src="assets/img/images/footer.png" alt="شعار المنظمة" />
+
+    <footer class="footer">
+        <!-- عنوان الفوتر -->
+        <div class="footer-header">
+            <h2>المزيد من برنامج الأغذية العالمي</h2>
+        </div>
+
+        <!-- قسم حالات الطوارئ -->
+        <section class="footer-section1">
+            
+            <div class="footer-sits">
+                <div class="footer-list">
+                    <ul>
+                        <h2>حالات الطوارئ</h2>
+                        <li><a href="https://ar.wfp.org/emergencies/palestine-emergency">فلسطين</a></li>
+                        <li><a href="https://ar.wfp.org/emergencies/afghanistan-emergency">أفغانستان</a></li>
+                        <li><a href="https://ar.wfp.org/emergencies/ukraine-emergency">أوكرانيا</a></li>
+                        <li><a href="https://ar.wfp.org/emergencies/sudan-emergency">السودان</a></li>
+                        <li><a href="https://ar.wfp.org/emergencies/yemen-emergency">اليمن</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-list">
+                    <ul>
+                        <h2>مناطق أخرى</h2>
+                        <li><a href="https://ar.wfp.org/emergencies/syria-emergency">سوريا</a></li>
+                        <li><a href="https://ar.wfp.org/emergencies/lebanon">لبنان</a></li>
+                        <li><a href="https://ar.wfp.org/emergencies/nigeria-emergency">نيجيريا</a></li>
+                        <li><a href="https://ar.wfp.org/emergencies/haiti-emergency">هايتي</a></li>
+                        <li><a href="https://ar.wfp.org/emergencies/somalia-emergency">الصومال</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-list">
+                    <ul>
+                        <h2><a href="#">من نحن</a></h2>
+                        <li><a href="#">استراتيجية البرنامج</a></li>
+                        <li><a href="#">القيادة</a></li>
+                        <li><a href="#">التمويل والجهات المانحة</a></li>
+                        <li><a href="#">تاريخ البرنامج</a></li>
+                    </ul>
+                </div>
+            
+                <div class="footer-list">
+                    <ul>
+                        <h2><a href="#">عملنا</a></h2>
+                        <li><a href="#">المساعدات النقدية والعينية</a></li>
+                        <li><a href="#">الإغاثة الطارئة</a></li>
+                        <li><a href="#">الدعم اللوجستي والإنساني</a></li>
+                        <li><a href="#">سلاسل الإمداد</a></li>
+                    </ul>
+                </div>
+            
+                <div class="footer-list">
+                    <ul>
+                        <h2><a href="#">الموارد</a></h2>
+                        <li><a href="#">الأخبار</a></li>
+                        <li><a href="#">القصص</a></li>
+                        <li><a href="#">المطبوعات</a></li>
+                        <li><a href="#">الفيديوهات</a></li>
+                    </ul>
+                </div>
+            
+                <div class="footer-list">
+                    <ul>
+                        <h2><a href="#">شاركنا</a></h2>
+                        <li><a href="#">فرص العمل</a></li>
+                        <li><a href="#">كن شريكاً</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-column social-media">
-                <ul>
-                    <li><a href="#"><img src="assets/img/icons/facebook-svgrepo-com.svg" alt="فيسبوك" /> </a></li>
-                    <li><a href="#"><img src="/assets/img/icons/twitter-svgrepo-com.svg" alt="تويتر" /> </a></li>
-                    <li><a href="#"><img src="assets/img/icons/instagram-167-svgrepo-com.svg" alt="إنستغرام" /> </a></li>
-                    <li><a href="#"><img src="assets/img/icons/linkedin-svgrepo-com.svg" alt="لينكدإن" /> </a></li>
-                    <li><a href="#"><img src="assets/img/icons/youtube-svgrepo-com.svg" alt="يوتيوب" /> </a></li>
-                    <li><a href="#"><img src="assets/img/icons/tik-tok-svgrepo-com.svg" alt="تيك توك" /> </a></li>
-                </ul>
+        </section>
+
+        <!-- التبرع ومعلومات الاتصال -->
+        <div class="footer-container">
+                <div class="footer-column-bottom">
+                    <img src="../images/WFP.png" height="150px" width="200px" alt="شعار برنامج الأغذية العالمي">
+                </div>
+
+            <div class="footer-column-bottom">
+                <div class="special">
+                    <ul>
+                        <li><a class="special-icon" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="special-icon" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="special-icon" href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="special-icon" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a class="special-icon" href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="special-icon" href="#"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
                 <p>
-                    <a href="#"> إشعار الخصوصية</a> | 
-                    <a href="#">  الأحكام والشروط</a> | 
-                    <a href="#"> الأسئلة الأكثر شيوعاً</a>
+                    <a href="#">إشعار الخصوصية</a> | 
+                    <a href="#">الأحكام والشروط</a> | 
+                    <a href="#">الأسئلة الشائعة</a>
                 </p>
             </div>
-            <div class="footer-column text">
-                <p>Via Cesare Giulio Viola, 68,<br> 00148 Rome RM, Italy</p>
+
+            <div class="footer-column-bottom">
+                <p>
+                    Via Cesare Giulio Viola, 68,<br>
+                    00148 Rome RM, Italy
+                </p>
             </div>
         </div>
     </footer>
-    <script src="scripts/main.js"></script>
+
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
