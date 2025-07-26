@@ -1,405 +1,527 @@
-/* header styles */
-/* .header-contant{
-    position: fixed;
-} */
-.btn-theme{
-border-radius: 5px;
-background-color: #007DBC;
-color: white;
+/*------------------ FontAwesome Icons --------------------------------*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+/*--------------------- إعدادات عامة ---------------------------------*/
+.light {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
 }
-.header-contant{
-    height: 30px;;
-}
-.header-logo-img{
-    position: absolute;
-    margin-left: 1000px;
-    z-index: 100;
-    display: block;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-.header-logo-text{
+a {
     text-decoration: none;
-    position: absolute;
-    margin-left: 840px;
-    padding: 20px 20px;
-    margin-top: 40px;
-    z-index: 100;
-    display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color:rgb(0, 125, 188) ;
+    color: inherit;
 }
-
-.block2-header-nav{
-    position: absolute;
-    margin-left: 130px;
-    margin-top: 60px;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.nav-list{
-    list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+.container {
     display: flex;
-}
-.nav-list li a{
-    text-decoration: none;
-    margin-right: 20px;
-    font-weight: bold;
-    color:black;
-}
-.nav-list li a:hover{
-    text-decoration: underline;
-    border-bottom: rgb(133, 127, 127);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
-/* main styles */
-/* .section-after-header{
-    position: relative;
-    z-index: 99;
-} */
-.main-image img
-{
-    margin-top: 85px;
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin-right: 0px;
-    margin-left: 0px;
+/*------------------------------- رأس الصفحة ---------------------------*/
+.header {
+    background-color: #007dbc;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-.text-on-img h1{
-    direction: rtl;
-    position: absolute;
-    top:700px;
-    color: #fff;
-    font-size: 28px;
-    font-family: Noto Sans Arabic, -apple-system, system-ui,
-                BlinkMacSystemFont, Segoe UI, Roboto,
-                Helvetica Neue, Arial, sans-serif;
-    display: block;
-    text-align: right;
-    direction: rtl;
-    margin-left: 580px;
-}
-.text-on-img h1 mark{
-    background-color: rgb(0, 125, 188);
-    color: #fff;
+.logo img {
+    height: 60px;
 }
 
-.main-on-img a{
-    position: absolute;
-    top:800px;
-    margin-left: 450px;
-    direction: rtl;
-
-}
-.on-img-2btns{
-    display: block;
-}
-
-.btns-on-img a{
-    width: 9%;
+.nav {
     display: flex;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    top:-110px;
+    gap: 1rem;
 }
-.btns-on-img a:hover{
-    /* width: 10%; */
-    background-color: #f1657f82;
-}
-.btns-on-img .read-more{
-    margin-right: 70px;
-    border: 1px solid white;
-    text-decoration: none;
-    color: #fff !important;
-    border-radius: 5px;
-    border: 1px solid !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    margin-top: -42px;
-}
-
-
-/* section-after-main-img */
-.section-after-main-img{
-    direction: rtl;
-    padding: 20px;
+.nav-list {
     display: flex;
-    justify-content: space-around; 
+    gap: 1rem;
     flex-wrap: wrap;
 }
-.section-after-main-img a{
-    text-decoration: none;
-}
-.section-after-main-img a:hover{
-    width: 30%;
-}
-.section-after-main-img .column {
-    width: 25%; 
-    text-align: center; 
-    margin-bottom: 20px;
-    color:rgb(0, 125, 188) ; 
-    font-family: Noto Sans Arabic, -apple-system, system-ui,
-                BlinkMacSystemFont, Segoe UI, Roboto,
-                Helvetica Neue, Arial, sans-serif;
-    border: 1px solid #eee;
-}
-.section-after-main-img img {
-    width: 100%;
-    height: auto; 
-    border-radius: 8px; 
-}
-.section-after-main-img .large-text {
-    font-size: 1.5rem; 
-    margin: 10px 0; 
-    font-weight: 700;
-}
-.section-after-main-img .small-text {
-    font-size: 0.9em; 
-    color: #555; 
-}
 
-
-/* footer styles */
-.footer-section1{
-    color: #031c2d;
-    display: block;
-    font-size: 1.125rem;
-    font-family: Noto Sans Arabic, -apple-system, system-ui,
-                BlinkMacSystemFont, Segoe UI, Roboto,
-                Helvetica Neue, Arial, sans-serif;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
-.footer-sits-emergencies{
-    direction: rtl;
-    background-color: #e3002b;
-    color: #fff;
-    font-family: Noto Sans Arabic, -apple-system, system-ui,
-                BlinkMacSystemFont, Segoe UI, Roboto,
-                Helvetica Neue, Arial, sans-serif;
-    display: flex;
-    justify-content: space-between; 
-    padding: 20px;
-}
-.footer-sits-emergencies h2{
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-.footer-sits-emergencies .footer-list{
-    width: 30%;
-    margin: 10px;
-}
-.footer-sits-emergencies ul{
-    list-style-type: none;
-    /* display: inline; */
-}
-.footer-sits-emergencies ul li{
-    padding: 10px;
-}
-.footer-sits-emergencies ul li a {
-    color: #fff;
-    text-decoration:none;
-    font-weight: bold;
-
-}
-
-.footer-section2{
-    margin-top: 0px;
-    background-color: #1A4262;
-    direction: rtl;
-    font-family: Noto Sans Arabic, -apple-system, system-ui,
-                BlinkMacSystemFont, Segoe UI, Roboto,
-                Helvetica Neue, Arial, sans-serif;
-    display: block;
-}
-.footer-section2 .footer-menu-item{
-    display: flex;
-    margin-right: 60px;
-}
-.footer-section2 .footer-menu-item h2 a{
-    color:#0093B6 ;
-    text-decoration: none;
-    display: flex;
-    font-weight: bold;
-}
-.footer-section2 .footer-menu-item ul{
-    list-style-type: none;
-    position: relative;
-    left: 40px;
-}
-.footer-section2 .footer-menu-item ul li{
-    padding: 9px;
-}
-.footer-section2 .footer-menu-item ul li a{
-    color: rgb(252, 247, 247);
-    text-decoration: none;
-    font-size: 1.125rem;
-    
-}
-.footer-section2 .menu-item{
-    width: 30%;
-    margin: 10px;
-}
-
-
-
-/*------------------------- for donate.html------------------------- */
-.btn-donate-now{
-    text-decoration: none;
-    border-color: #e71321 !important;
-    background-color: #e71321 ;
-    color: #fff !important;
-    padding: 10px;
+.btn-donate-now {
+    background-color: #f44336;
+    color: white;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.3s ease;
+}
+.btn-donate-now:hover {
+    background-color: #d32f2f;
+}
+
+.btn-theme {
+    background-color: white;
+    color: #007dbc;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.btn-theme:hover {
+    transform: scale(1.05);
+}
+
+/* ---------------------------قائمة الهامبرغر -----------------------*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* -------------------------قسم الصورة الرئيسية ---------------------*/
+.hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: right;
+    animation: fadeIn 2s ease;
+}
+.hero-buttons {
+    margin-top: 1rem;
+}
+.btn-donate, .btn-read {
+    background-color: #007dbc;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+.btn-donate:hover, .btn-read:hover {
+    background-color: #005f91;
+    transform: scale(1.05);
+}
+
+/* -----------------------------المقالات ---------------------------*/
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+.article {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+.article:hover {
+    transform: translateY(-5px);
+}
+.article img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/*---------------------------- نموذج التواصل ----------------------*/
+.contact-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.contact-form h2{
+    text-align: center;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
     font-weight: bold;
 }
-.donate-main-on-img .text-on-img h1{
-    direction: rtl;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Cairo', sans-serif;
+}
+.contact-form button {
+    background-color: #007dbc;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact-form button:hover {
+    background-color: #005f91;
+}
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+
+/*---------------------------- خريطة ----------------------------*/
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 2rem;
+}
+
+/* -------------------------- الرسوم المتحركة --------------------*/
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*----------------------- استجابة الجوال --------------------------*/
+@media (max-width: 768px) {
+    .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #007dbc;
     position: absolute;
-    top:250px;
-    color: #fff;
-    font-size: 28px;
-    font-family: Noto Sans Arabic, -apple-system, system-ui,
-                BlinkMacSystemFont, Segoe UI, Roboto,
-                Helvetica Neue, Arial, sans-serif;
-    display: block;
-    text-align: right;
-    direction: rtl;
-    margin-left: 660px;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 999;
 }
-.btns-on-img .btn-donate{
-    margin-right: 250px;
-    border: 1px solid red;
-}
-.donate-two-btns {
-    direction: rtl;
+.nav.open {
     display: flex;
-    margin-right: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
 }
-.donate-two-btns a{
-    border: 1px solid rgb(195, 193, 204);
+.hamburger {
+    display: flex;
+}
+.container {
+    flex-wrap: wrap;
+    }
+}
+
+/* ---------------------- General Footer Styles ----------------------*/
+.footer {
+    background-color: #002244;
+    color: white;
+    padding: 3rem 1rem;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
     text-align: center;
-    padding:12px
 }
-.donate-two-btns .donate{
-    width: 47%;
-    text-decoration: none;
-    font-size: 20px;
+
+.footer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ffcc00;
 }
-.btns-on-img btn-donate{
-    padding-left: 20px;
-    margin-left: 450px;
+
+.footer a:hover {
+    color: #ffcc00;
 }
+
+/*-------------------- Layout for Footer Sections ------------------*/
+.footer-sits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.footer-list {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    background-color: #003366;
+}
+
+.footer-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    border-top: 1px solid #ffffff33;
+    margin-top: 2rem;
+}
+
+/* ------------------- Bottom Columns Styling --------------*/
+.footer-column-bottom {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/*-------------------- Social Icons Row -----------------*/
+.special ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.special-icon {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.special-icon:hover {
+    color: #ffcc00;
+}
+
+/* Bottom Links */
+.footer-column-bottom p a {
+    color: white;
+    font-size: 0.9rem;
+    margin: 0 0.3rem;
+}
+
+.footer-column-bottom p a:hover {
+    text-decoration: underline;
+}
+.footer-list:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-sits {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .special ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+/*==================== الوضع الداكن ====================*/
+/* الوضع الداكن العام */
+.dark {
+    background-color: #121212;
+    color: #918585;
+}
+
+/* رأس الصفحة */
+.dark .header {
+    background-color: #1a1a1a;
+    color: #918585;
+}
+
+/* زر تغيير الوضع */
+.dark .btn-theme {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+/* التنقل */
+.dark .nav,
+.dark .nav-list a {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* الأزرار العامة */
+.dark .btn-donate-now,
+.dark .btn-donate,
+.dark .btn-read {
+    background-color: #e91e63;
+    color: white;
+}
+.dark .btn-donate-now:hover,
+.dark .btn-donate:hover,
+.dark .btn-read:hover {
+    background-color: #c2185b;
+}
+
+/* المقالات */
+.dark .article {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* نموذج التواصل */
+.dark .contact-form {
+    background-color: #1e1e1e;
+}
+.dark .contact-form input,
+.dark .contact-form textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* الفوتر */
+.dark .footer {
+    background-color: #111;
+    color: #ddd;
+}
+.dark .footer-list {
+    background-color: #222;
+}
+.dark .footer a {
+    color: #ccc;
+}
+.dark .footer a:hover {
+    color: #ffcc00;
+}
+.dark.footer.footer-section1.footer-sits.footer-list h2{
+    color: #ffcc00;
+}
+
+
+/* ===========================================Style of Donate Page =================== */
 .donate-container {
-    margin-left: 350px;
-    margin-top: 30px;
-    margin-bottom: 200px;
+    margin: 30px auto;
     direction: rtl;
-    background-color: #e0e0e0; 
+    background-color: #e0e0e0;
     padding: 30px;
-    border-radius: 8px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-    width: 90%; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
     max-width: 500px;
+    box-sizing: border-box;
 }
-.donate-container .btns{
-    width: 45%;
-}
+
 .donate-container h1 {
     text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
-.donate-container input[type="text"], select {
+
+.donate-container .btns {
+    width: 48%;
+    margin: 5px 1%;
+}
+
+.donate-container input[type="text"],
+.donate-container input[type="number"],
+.donate-container select {
     padding: 10px;
     width: 100%;
     margin-bottom: 10px;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
+
 .donate-container button {
     padding: 10px 20px;
-    margin: 5px;
+    margin: 5px 0;
     font-size: 16px;
     cursor: pointer;
-    background-color: rgb(0, 125, 188);; 
-    color: white; 
-    border: none; 
-    border-radius: 5px; 
+    background-color: rgb(0, 125, 188);
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
+
 .donate-container button:hover {
-    background-color: rgb(0, 125, 188);; 
+    background-color: rgb(0, 100, 160);
 }
+
 .donate-container select {
-    display: none; 
+    display: none;
 }
+
 .donate-container select option:hover {
     background-color: #f0f0f0;
 }
 
-.donate-footer-container{
-    direction: rtl;
-    display: flex; 
-    justify-content: space-around;
-    align-items: flex-start; 
-    max-width: 1500px; 
-    margin: 0 auto; 
-    background-color:#1A4262 ;
-}
-.footer-column {
-    margin: 50px;
-    margin-right: 0;
-    margin-left: 0;
-    flex: 3; 
-    padding: 0 30px; 
-    justify-items: center;
-    color: white;
-}
-.footer-column img {
-    max-width: 50%;
-    color: white;  
-}
-.footer-column h3 {
-    margin-bottom: 10px; 
-}
-.footer-column ul {
-    direction: rtl;
-    list-style-type: none; 
-    padding: 0; 
-    display:flex;
-}
-.footer-column ul li a:hover {
-    width: 125%;
-}
-.footer-column a {
-    color: white; 
-    text-decoration: none; 
-    display: flex; 
-    align-items: center; 
-}
-.footer-column a i {
-    margin-right: 8px; 
-}
-.footer-column a:hover {
-    text-decoration: underline; 
-}
-.footer-column .social-media p{
-    text-align: center;
-    font-size: 50px;
-}
-.footer-column p {
-    display: flex;
+/* زر التبرع الرئيسي */
+.btn-donate-now {
+    text-decoration: none;
+    border-color: #e71321 !important;
+    background-color: #e71321;
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
-/* -------------------------about.html--------------------- */
+/* أزرار التبرع */
+.donate-container > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .donate-container {
+        padding: 20px;
+        margin: 20px auto;
+        width: 95%;
+    }
+
+    .donate-container .btns {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .donate-container h1 {
+        font-size: 20px;
+    }
+
+    .donate-container button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .donate-container select {
+        font-size: 14px;
+    }
+}
+
+
+
+/* ===========================Style od About Page ================== */
 
 .about-container {
     padding: 20px;
@@ -444,7 +566,7 @@ color: white;
     display: flex; 
     max-width: 1200px;
     margin: 20px auto;
-    font-size: 28px;
+    font-size: 22px;
     font-family: Noto Sans Arabic, -apple-system, system-ui,
                 BlinkMacSystemFont, Segoe UI, Roboto,
                 Helvetica Neue, Arial, sans-serif;
@@ -476,22 +598,26 @@ color: white;
     margin-bottom: 20px; 
 }
 
-/* ------------------dark mode or light mode ----------------------- */
-body {
-    transition: background-color 0.3s, color 0.3s;
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
 }
 
-body.light-mode {
-    background-color: white;
-    color: black;
-}
 
-body.dark-mode {
-    background-color: #121212;
-    color: white;
-}
 
-/* -----------------------------project.html---------------------------- */
+
+
+/*===============================Styles of Projects Page =========================== */
 h2 {
     color: #333;
     text-align: center;
@@ -573,61 +699,4 @@ tr:hover td {
     border-color: #0093B6;
     box-shadow: 0 0 10px rgba(0, 147, 182, 0.2);
 }
-
-/* ----------------media queries for responsive design ----------------- */
-@media (max-width: 768px) {
-    .table-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .table-column {
-        width: 100%;
-    }
-}
-@media (max-width: 768px) {
-    .footer-sits-emergencies {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .footer-list {
-        width: 100%;
-    }
-}
-@media (max-width: 768px) {
-    .footer-menu-item {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .menu-item {
-        width: 100%;
-    }
-}
-@media (max-width: 768px) {
-    .donate-footer-container {
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
-    
-    .footer-column {
-        width: 100%;
-    }
-}
-/* for about page */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
-    
-    .contain {
-        width: 100%;
-    }
-}
-
-
 

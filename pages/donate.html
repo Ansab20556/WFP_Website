@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>برنامج الأغذية العالمي (WFP)</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <title>صفحة التبرع </title>
+    <link rel="stylesheet" href="../styles/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
 </head>
 <body class="light">
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo">
-                <img src="images/WFP.png" alt="WFP Logo">
+            <a href="../index.html" class="logo">
+                <img src="../images/WFP.png" alt="WFP Logo">
             </a>
             <button class="hamburger" id="hamburger">
                 <span></span><span></span><span></span>
             </button>
             <nav class="nav" id="nav">
                 <ul class="nav-list">
-                <li><a href="pages/about.html">من نحن</a></li>
-                <li><a href="pages/projects.html">عملنا</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="projects.html">عملنا</a></li>
                 <li><a href="#">اين نعمل</a></li>
                 <li><a href="#">شاركنا</a></li>
-                <li><a href="pages/donate.html" class="btn-donate-now">تبرع الآن</a></li>
+                <li><a href="donate.html" class="btn-donate-now">تبرع الآن</a></li>
                 </ul>
             </nav>
             <button class="btn-theme" id="theme-toggle">تبديل الوضع</button>
@@ -31,52 +31,91 @@
 
     <main>
         <section class="hero">
-        <img src="images/WF11017230 20250319_SDN_Abubakar-Garelnabei_0012_0.jpg" alt="صورة رئيسية">
-        <div class="hero-content">
-            <h1><mark>تقرير للأمم المتحدة </mark>تفاقم الجوع في 13 بؤرة ساخنة.. <br>وخطر الموت جوعاً يهدد خمساً منها</h1>
-            <div class="hero-buttons">
-            <a href="pages/donate.html" class="btn-donate">تبرع الان</a>
-            <a href="#" class="btn-read">اقرأ المزيد</a>
+            <img src="../images/untitled-design.png" sizes="100vw" width="384" height="256" alt="صورة رئيسية">
+            <div class="hero-content">
+                <h1>يرجى التبرع <mark>الآن </mark> <br>يوفر كل تبرع الغذاء للأطفال والأسر الجوعى.</h1>
+            </div>
+        </section>
+
+        <div class="donate-container">
+            <h1>تبرع لمنظمتنا</h1>
+            <div>
+                <button class="btns" id="one-time-donation-btn">تبرع مرة واحدة</button>
+                <button class="btns" id="monthly-donation-btn">تبرع شهري</button>
+            </div>
+
+            <div id="donation-form-container">
+                <form id="one-time-donation-form" class="donation-form" style="display: none;">
+                    <h2>تبرع مرة واحدة</h2>
+                    <label for="one-time-amount">المبلغ:</label>
+                    <input type="number" id="one-time-amount" placeholder="أدخل المبلغ" required="">
+                    <button type="submit">تبرع الآن</button>
+                </form>
+
+                <form id="monthly-donation-form" class="donation-form" style="display: none;">
+                    <h2>تبرعك الشهري</h2>
+                    <p>أنت على وشك أن تصبح داعماً شهرياً لبرنامج الأغذية العالمي</p>
+
+                    <label for="country">البلد:</label>
+                    <input type="text" id="country-input" placeholder="ابحث عن البلد..." onfocus="showCountryList()" onkeyup="filterCountries()">
+                    <select id="country" required="" size="5">
+                        <option value="afghanistan">أفغانستان</option>
+                        <option value="albania">ألبانيا</option>
+                        <option value="algeria">الجزائر</option>
+                        <option value="andorra">أندورا</option>
+                        <option value="angola">أنغولا</option>
+                        <option value="argentina">الأرجنتين</option>
+                        <option value="australia">أستراليا</option>
+                        <option value="brazil">البرازيل</option>
+                        <option value="canada">كندا</option>
+                        <option value="egypt">مصر</option>
+                        <option value="france">فرنسا</option>
+                        <option value="germany">ألمانيا</option>
+                        <option value="india">الهند</option>
+                        <option value="japan">اليابان</option>
+                        <option value="kuwait">الكويت</option>
+                        <option value="mexico">المكسيك</option>
+                        <option value="qatar">قطر</option>
+                        <option value="saudi-arabia">المملكة العربية السعودية</option>
+                        <option value="united-states">الولايات المتحدة الأمريكية</option>
+                        <option value="yemen">اليمن</option>
+                    </select>
+
+                    <label for="currency">العملة:</label>
+                    <input type="text" id="currency-input" placeholder="ابحث عن العملة..." onfocus="showCurrencyList()" onkeyup="filterCurrencies()">
+                    <select id="currency" required="" size="5">
+                        <option value="usd">$ - USD</option>
+                        <option value="eur">€ - EUR</option>
+                        <option value="gbp">£ - GBP</option>
+                        <option value="jpy">¥ - JPY</option>
+                        <option value="aud">$ - AUD</option>
+                        <option value="cad">$ - CAD</option>
+                        <option value="chf">CHF - Swiss Franc</option>
+                        <option value="cny">¥ - CNY</option>
+                        <option value="inr">₹ - INR</option>
+                        <option value="rub">₽ - RUB</option>
+                    </select>
+
+                    <label>قم بالتبرّع شهرياً بمبلغ:</label>
+                    <label>
+                        <input type="radio" name="amount" value="10" checked=""> $10.00
+                    </label>
+                    <label>
+                        <input type="radio" name="amount" value="18"> $18.00
+                    </label>
+                    <label>
+                        <input type="radio" name="amount" value="27"> $27.00
+                    </label>
+                    <label>
+                        <input type="radio" name="amount" value="other"> مبلغ آخر:
+                        <input type="number" id="other-amount" placeholder="أدخل المبلغ">
+                    </label>
+
+                    <button type="submit">تبرع شهرياً</button>
+                </form>
             </div>
         </div>
-        </section>
 
-        <section class="articles">
-        <a href="#" class="article">
-            <img src="images/image1.png" alt="صورة 1">
-            <h3>بيان بشأن حادث قافلة شمال غزة</h3>
-            <p>بيانات صحفية</p>
-        </a>
-        <a href="#" class="article">
-            <img src="images/image2.png" alt="صورة 2">
-            <h3>الحرب في أوكرانيا: كيف يساعد البرنامج صغار المزارعين</h3>
-            <p>قصة</p>
-        </a>
-        <a href="#" class="article">
-            <img src="images/image3.png" alt="صورة 3">
-            <h3>اللاجئون الفارون من السودان يواجهون تفاقم الجوع</h3>
-        </a>
-        </section>
-
-        <section class="contact-form">
-        <h2>تواصل معنا</h2>
-        <form onsubmit="return validateForm()">
-            <label>الاسم الكامل<input type="text" id="name" /></label>
-            <div class="error" id="nameError"></div>
-
-            <label>البريد الإلكتروني<input type="email" id="email" /></label>
-            <div class="error" id="emailError"></div>
-
-            <label>الرسالة<textarea id="message"></textarea></label>
-            <div class="error" id="messageError"></div>
-
-            <button type="submit">إرسال</button>
-        </form>
-        </section>
-
-        <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?..." allowfullscreen loading="lazy"></iframe>
-        </div>
     </main>
 
     <footer class="footer">
@@ -154,7 +193,7 @@
         <!-- التبرع ومعلومات الاتصال -->
         <div class="footer-container">
                 <div class="footer-column-bottom">
-                    <img src="images/WFP.png" height="150px" width="200px" alt="شعار برنامج الأغذية العالمي">
+                    <img src="../images/WFP.png" height="150px" width="200px" alt="شعار برنامج الأغذية العالمي">
                 </div>
 
             <div class="footer-column-bottom">
@@ -184,6 +223,6 @@
         </div>
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
