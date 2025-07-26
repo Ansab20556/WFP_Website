@@ -337,3 +337,79 @@ ul {
         justify-content: center;
     }
 }
+
+
+
+/*==================== الوضع الداكن ====================*/
+/* الوضع الداكن العام */
+.dark {
+    background-color: #121212;
+    color: #918585;
+}
+
+/* رأس الصفحة */
+.dark .header {
+    background-color: #1a1a1a;
+    color: #918585;
+}
+
+/* زر تغيير الوضع */
+.dark .btn-theme {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+/* التنقل */
+.dark .nav,
+.dark .nav-list a {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* الأزرار العامة */
+.dark .btn-donate-now,
+.dark .btn-donate,
+.dark .btn-read {
+    background-color: #e91e63;
+    color: white;
+}
+.dark .btn-donate-now:hover,
+.dark .btn-donate:hover,
+.dark .btn-read:hover {
+    background-color: #c2185b;
+}
+
+/* المقالات */
+.dark .article {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* نموذج التواصل */
+.dark .contact-form {
+    background-color: #1e1e1e;
+}
+.dark .contact-form input,
+.dark .contact-form textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* الفوتر */
+.dark .footer {
+    background-color: #111;
+    color: #ddd;
+}
+.dark .footer-list {
+    background-color: #222;
+}
+.dark .footer a {
+    color: #ccc;
+}
+.dark .footer a:hover {
+    color: #ffcc00;
+}
+.dark.footer.footer-section1.footer-sits.footer-list h2{
+    color: #ffcc00;
+}
