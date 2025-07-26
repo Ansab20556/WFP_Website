@@ -182,3 +182,31 @@ function loadStoredData() {
 }
 
 window.onload = loadStoredData();
+
+
+
+// ------------ for project.html
+// search the work area in two tables
+function filterTable() {
+    const input = document.getElementById('search-input');
+    const filter = input.value;
+    
+    const table1 = document.getElementById('work-table1');
+    const rows1 = table1.getElementsByTagName('tr');
+    filterRows(rows1, filter);
+    
+    const table2 = document.getElementById('work-table2');
+    const rows2 = table2.getElementsByTagName('tr');
+    filterRows(rows2, filter);
+}
+
+function filterRows(rows, filter) {
+    for (let i = 1; i < rows.length; i++) { 
+        const cell = rows[i].getElementsByTagName('td')[0];
+        if (cell) {
+            const link = cell.getElementsByTagName('a')[0];
+            const textValue = link.textContent || link.innerText;
+            rows[i].style.display = textValue.includes(filter) ? '' : 'none';
+        }
+    }
+}
