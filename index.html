@@ -6,21 +6,21 @@
     <title>برنامج الأغذية العالمي للأمم المتحدة (WFP)</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body >
+<body>
     <header class="header-contant">
         <div class="block2-in-header">
             <div class="block2-header-logo">
                 <a href="index.html" class="header-logo-img"><img src="assets/img/images/WFP.png" height="145px"></a>
-                <a href="index.html" class="header-logo-text">انقاذ الارواح <br> تغيير الحياة</a>
+                <a href="index.html" class="header-logo-text"> </a>
             </div>
             <div class="block2-header-nav">
-                <nav>
+                <nav class="tttt">
                     <ul class="nav-list" dir="rtl">
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="projects.html">عملنا</a></li>
-                        <li><a href="#">اين نعمل</a></li>
-                        <li><a href="#">شاركنا</a></li>
-                        <li><a href="donate.html" target="_blank" class="btn-donate-now">تبرع الان</a></li>
+                        <li><a class="res" href="about.html">من نحن</a></li>
+                        <li><a class="res" href="projects.html">عملنا</a></li>
+                        <li><a class="res" href="#">اين نعمل</a></li>
+                        <li><a class="res" href="#">شاركنا</a></li>
+                        <li><a class="res" href="donate.html" target="_blank" class="btn-donate-now">تبرع الان</a></li>
                         
                     </ul>
                 </nav>
@@ -54,8 +54,9 @@
                 <div>
                     <img src="assets/img/images/image1.png" alt="وصف الصورة 1">
                     <div class="large-text">بيان بشأن حادث قافلة شمال غزة</div>
-                    <br><br><br><br><br><br><br><br><br>
                     <div class="small-text">بيانات صحفية</div>
+                    <br><br><br><br><br><br><br><br><br>
+                    
                 </div>
             </a>
             <a href="#" class="column">
@@ -72,11 +73,42 @@
                     <img src="assets/img/images/image3.png" alt="وصف الصورة 3">
                     <div class="large-text">اللاجئون الفارون من السودان يواجهون تفاقم الجوع وسوء التغذية مع تهديد بتخفيضات كبيرة في المساعدات الغذائية</div>
                     <br><br><br><br><br><br>
-                    <div class="small-text">بيانات صحفية</div>
+            
                 </div>
             </a>
         </section>
     </main>
+    <div class="contact-form">
+    <h2>تواصل معنا</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+        <div class="form-group">
+        <label for="name">الاسم الكامل</label>
+        <input type="text" id="name" name="name" />
+        <div id="nameError" class="error"></div>
+        </div>
+
+        <div class="form-group">
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" />
+        <div id="emailError" class="error"></div>
+        </div>
+
+        <div class="form-group">
+        <label for="message">الرسالة</label>
+        <textarea id="message" name="message"></textarea>
+        <div id="messageError" class="error"></div>
+        </div>
+
+        <button type="submit">إرسال</button>
+    </form>
+    </div>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508183!2d144.95373531531698!3d-37.81627997975183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11f2b5%3A0x5045675218ceed30!2sMelbourne%20Australia!5e0!3m2!1sen!2sus!4v1626546789037!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
 
     <br><br><br><br><br><br>
 
@@ -182,7 +214,6 @@
             </div>
         </div>
     </footer>
-
     <script src="scripts/main.js"></script>
 </body>
 </html>

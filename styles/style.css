@@ -2,7 +2,108 @@
 /* .header-contant{
     position: fixed;
 } */
-.btn-theme{
+ /* الزر */
+.btn-theme {
+    border-radius: 5px;
+    background-color: #007DBC;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* رأس الصفحة */
+.header-contant {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    position: relative;
+}
+
+/* شعار الصورة */
+.header-logo-img {
+    height: 50px;
+    background-color: rgba(248, 246, 246, 0.7);
+}
+
+/* نص الشعار */
+.header-logo-text {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(0, 125, 188);
+    margin-left: 10px;
+}
+
+/* القائمة */
+.block2-header-nav {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* قائمة التنقل */
+.nav-list {
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 5px 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+    border-bottom: 2px solid rgb(133, 127, 127);
+}
+
+/* ✅ Media Query للجوال */
+@media (max-width: 768px) {
+    .header-contant {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-logo-text {
+        margin: 10px 0 0 0;
+        font-size: 18px;
+    }
+
+    .block2-header-nav {
+        margin-top: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list li {
+        margin: 8px 0;
+    }
+}
+.header-logo-img img{
+    height: 50px;
+    margin-right: 300px;
+    margin-bottom: 30px;
+}
+/* .btn-theme{
 border-radius: 5px;
 background-color: #007DBC;
 color: white;
@@ -52,7 +153,7 @@ color: white;
 .nav-list li a:hover{
     text-decoration: underline;
     border-bottom: rgb(133, 127, 127);
-}
+} */
 
 /* main styles */
 /* .section-after-header{
@@ -123,7 +224,7 @@ color: white;
 }
 
 
-/* section-after-main-img */
+/* --------------section-after-main-img -----------*/
 .section-after-main-img{
     direction: rtl;
     padding: 20px;
@@ -476,6 +577,20 @@ color: white;
     margin-bottom: 20px; 
 }
 
+.map-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
 /* ------------------dark mode or light mode ----------------------- */
 body {
     transition: background-color 0.3s, color 0.3s;
@@ -488,7 +603,7 @@ body.light-mode {
 
 body.dark-mode {
     background-color: #121212;
-    color: white;
+    color: white !important;
 }
 
 /* -----------------------------project.html---------------------------- */
@@ -575,6 +690,17 @@ tr:hover td {
 }
 
 /* ----------------media queries for responsive design ----------------- */
+
+@media (max-width: 768px) {
+    .tttt {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .res {
+        width: 100%;
+    }
+}
 @media (max-width: 768px) {
     .table-container {
         flex-direction: column;
@@ -629,5 +755,60 @@ tr:hover td {
     }
 }
 
+/* ---------------- */
+.contact-form {
+    direction: rtl;
+    background-color: #fff;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
+.contact-form h2 {
+    text-align: center;
+    color: #333;
+}
 
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+button {
+    background-color: #007DBC;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #007DBC;
+}
